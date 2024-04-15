@@ -2,16 +2,36 @@
   "name": "mydesignsystem",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lint": "eslint stories/*.{js,jsx}",
+    "prettier": "prettier . --write",
+    "prepare": "husky install"
   },
   "dependencies": {
     "lit": "^3.1.2"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.3.2",
+    "@storybook/addon-essentials": "^8.0.8",
+    "@storybook/addon-interactions": "^8.0.8",
+    "@storybook/addon-links": "^8.0.8",
+    "@storybook/blocks": "^8.0.8",
+    "@storybook/html": "^8.0.8",
+    "@storybook/html-vite": "^8.0.8",
+    "@storybook/test": "^8.0.8",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-storybook": "^0.8.0",
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5",
+    "storybook": "^8.0.8",
     "vite": "^5.2.0"
   }
 }
